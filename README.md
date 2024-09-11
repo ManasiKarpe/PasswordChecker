@@ -55,3 +55,35 @@ Select your method (POST), then click Actions > Enable CORS. This allows your AP
 Go to Stages > Create Stage (e.g., prod).
 Once created, deploy the API by selecting Deploy API.
 Note the Invoke URL for your API Gateway; this is the endpoint to which you'll send HTTP requests.
+
+Once your API is deployed, you can test the password strength checker by sending a POST request to your API endpoint.
+
+For Example API Request will look like:
+
+
+**curl -X POST <YOUR_API_URL> \
+-H "Content-Type: application/json" \
+-d '{"password": "myPassword123!", "first_name": "John", "last_name": "Doe"}'
+Replace <YOUR_API_URL> with the actual API Gateway endpoint URL.**
+
+** Response:**
+
+**{
+  "status": "good",
+  "message": "Your password is good.",
+  "score": 5
+}**
+
+**
+4. Local Development**
+If you want to run the password strength checker locally for development or testing:
+
+**Clone the repository:
+git clone https://github.com/your-username/password-strength-checker.git
+cd password-strength-checker**
+**
+Install dependencies:**
+
+pip install -r requirements.txt
+Run the function:
+You can call the check_password_strength() function directly in Python or integrate it with a local API testing framework like Flask.
