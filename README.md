@@ -74,14 +74,12 @@ Replace <YOUR_API_URL> with the actual API Gateway endpoint URL.**
   "score": 5
 }**
 
-**
-4. Local Development**
+4. **Local Development**
 If you want to run the password strength checker locally for development or testing:
 
 **Clone the repository:
 git clone https://github.com/your-username/password-strength-checker.git
 cd password-strength-checker**
-**
 Install dependencies:**
 
 pip install -r requirements.txt
@@ -92,7 +90,7 @@ You can call the check_password_strength() function directly in Python or integr
 
 
 
-**Security and Best Practices****
+Security and Best Practices
 1. Do not expose your actual API URL publicly. Instead, use environment variables or placeholders in your documentation to avoid unwanted access.
 2. Use API keys or OAuth tokens for authenticated access to the API if required.
 3. Consider applying rate limiting and throttling to prevent abuse and protect against DDoS attacks.
