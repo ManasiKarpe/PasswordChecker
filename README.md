@@ -1,4 +1,5 @@
 **Password Strength Checker API**
+
 This project implements a Password Strength Checker using Python and AWS Lambda. The API assesses the strength of a password based on:
 
 Presence of uppercase, lowercase, numeric, and special characters.
