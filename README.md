@@ -78,8 +78,8 @@ Replace <YOUR_API_URL> with the actual API Gateway endpoint URL.**
 If you want to run the password strength checker locally for development or testing:
 
 **Clone the repository:
-git clone https://github.com/your-username/password-strength-checker.git
-cd password-strength-checker**
+git clone https://github.com/ManasiKarpe/PasswordChecker.git
+cd PasswordChecker
 Install dependencies:**
 
 pip install -r requirements.txt
